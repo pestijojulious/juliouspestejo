@@ -9,6 +9,8 @@ import stack3 from './images/css.png';
 import stack4 from './images/js.png';
 import stack5 from './images/react.png';
 import stack6 from './images/php.png';
+import service1 from './images/service1.jpg';
+import service2 from './images/service2.jpg';
 
 function App() {
 
@@ -72,7 +74,7 @@ function App() {
                 </Row>
             </section>
 
-            <section id="about">
+            <section id="about" className='border-bottom border-light'>
                 <p className='fs-1 fw-bold text-light text-center'>About Me</p>
             <Row lg={2} xs={1} id="about">
             <Col>
@@ -174,29 +176,54 @@ function App() {
             </Row>
             </section>
 
-            <section id="services">
-            <Row id="projects" className="section">
-            <Col className='mt-5 mt-lg-1'>
-                <Card className="shadow border-0">
+            <section id="services" className='border-bottom border-light'>
+            <Row id="projects">
+            <Col>
+                <Card className="bg-transparent border-0">
                 <Card.Body>
-                    <Card.Title className='fs-1 fw-bold text-center text-light text-lg-start'>Project</Card.Title>
+                    <Card.Title className='fs-1 fw-bold text-center text-light'>Services</Card.Title>
                     <Card.Text>
                         <Row lg={2} xs={1}>
-                            <Col className='m-auto'>
-                                <Card className='border-0 project m-auto'>
-                                    <Card.Body className=' overlay-hidden'>
-                                        {/* <Image src={} fluid alt='Project' className='scale-up' /> */}
-                                    </Card.Body>
-                                    <a href='https://github.com/pestijojulious?tab=repositories' target='_blank' rel='noreferrer' className='btn btn-outline-primary border-primary rounded-pill text-decoration-none'>repo</a>
+                            <Col lg={12} className='m-auto my-2'>
+                                <Card className='border-0 bg-transparent m-auto'>
+                                    <Card.Title className='text-justify'>
+                                    As a dedicated and ambitious IT graduate, I specialize in providing comprehensive technical support services. My hands-on experience during my OJT has equipped me with practical skills and a deep understanding of various IT solutions. Here’s how I can assist you:
+                                    </Card.Title>
                                 </Card>
                             </Col>
-                            <Col className='m-auto'>
+                            <Col className='m-auto my-2'>
                                 <Card className='border-0 project m-auto'>
-                                    <Card.Body>
-                                        <Card.Title className='text-center text-lg-start'></Card.Title>
-                                        <Card.Text className='text-justify'>
-                                        </Card.Text>
-                                    </Card.Body>
+                                    <Row lg={2} xs={1}>
+                                        <Col >
+                                            <div className='overflow-hidden p-3 text-justify'>
+                                            Leveraging my extensive experience to compile, organize, and manage data, ensuring it is accurate, up-to-date, and easily accessible. I excel in creating structured data systems that enhance data retrieval and usability.
+                                            </div>
+                                        </Col>
+                                        <Col>
+                                            <Card className='p-3 border-0 bg-transparent p-0 m-0'>
+                                            <div className='overflow-hidden m-auto'>
+                                                <Image src={service1} className='object-fit-cover scale-up m-auto' fluid />
+                                            </div>
+                                            </Card>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                            <Col className='m-auto my-2'>
+                                <Card className='border-0 project m-auto'>
+                                    <Row lg={2} xs={1}>
+                                        <Col >
+                                            <div className='overflow-hidden p-3 text-justify'>
+                                            Gathering and compiling files from various sources into coherent and organized collections. My meticulous approach ensures all documents are systematically arranged and easily retrievable.                                            </div>
+                                        </Col>
+                                        <Col>
+                                            <Card className='p-3 border-0 bg-transparent p-0 m-0'>
+                                            <div className='overflow-hidden m-auto'>
+                                                <Image src={service2} className='object-fit-cover scale-up m-auto' fluid />
+                                            </div>
+                                            </Card>
+                                        </Col>
+                                    </Row>
                                 </Card>
                             </Col>
                         </Row>
@@ -207,7 +234,7 @@ function App() {
             </Row>
             </section>
             <section id="experience">
-            <Row id="experience" className="section">
+            <Row id="experience">
             <Col>
                 <Card className="radius-0">
                 <Card.Body>
