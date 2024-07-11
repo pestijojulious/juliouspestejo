@@ -244,61 +244,61 @@ function App() {
                 <Card className="bg-transparent border-0">
                 <Card.Body>
                     <Card.Title className='fs-1 fw-bold text-center text-light'>Experience</Card.Title>
-                        <Row lg={3} xs={1}>
+                        <Row lg={3} xs={1} className='g-3'>
                             <Col lg={12} className='m-auto my-2'>
                                 <Card className='border-0 bg-transparent m-auto'>
-                                    <Card.Title className='text-justify w-75 m-auto py-2'>
+                                    <Card.Title className='text-justify w-lg-75 m-auto py-2'>
                                     During my OJT, I had the opportunity to immerse myself in a professional environment where I honed my technical skills and gained valuable experience in various aspects of IT support. Here are some highlights of my time:                                      
                                     </Card.Title>
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card className='border-0  m-auto'>
-                                    <Row lg={1}>
+                            <Col className='h-100'>
+                                <Card className='border-0 p-2 m-auto'>
+                                    <Row lg={1} xs={1}>
                                         <Col className='lh-100'>
                                             <Card className='p-3 border-0 bg-transparent lh-100 p-0 m-0'>
                                             <div className='overflow-hidden m-auto'>
-                                                <Image src={experience1} className='object-fit-cover scale-up m-auto' fluid />
+                                                <Image src={experience1} className='object-fit-cover serve-size scale-up' fluid />
                                             </div>
                                             </Card>
                                         </Col>
                                         <Col >
-                                            <div className='overflow-hidden p-3 text-justify'>
+                                            <div className='overflow-hidden p-lg-3 text-justify'>
                                             <b>Organized Documentation:</b> I was responsible for gathering and compiling files from multiple sources, ensuring that all documents were systematically arranged and easily accessible. My attention to detail ensured the accuracy and reliability of the compiled information.                                            </div>
                                         </Col>
                                     </Row>
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card className='border-0 '>
-                                    <Row lg={1} className='lh-100'>
+                            <Col className='h-100'>
+                                <Card className='border-0 p-2 '>
+                                    <Row lg={1} xs={1} className='lh-100'>
                                         <Col className='lh-100'>
                                             <Card className='p-3 border-0 bg-transparent lh-100 p-0 m-0'>
                                             <div className='overflow-hidden m-auto lh-100'>
-                                                <Image src={experience2} className='object-fit-cover scale-up m-auto' fluid />
+                                                <Image src={experience2} className='object-fit-cover serve-size scale-up m-auto' fluid />
                                             </div>
                                             </Card>
                                         </Col>
                                         <Col className='h-100'>
-                                            <div className='overflow-hidden p-3 text-justify'>
+                                            <div className='overflow-hidden p-lg-3 text-justify'>
                                             <b>Data Structuring:</b> I structured and categorized files to enhance retrieval efficiency. This process involved creating logical file hierarchies and implementing consistent naming conventions, making it easier for team members to locate and utilize documents.
                                             </div>
                                         </Col>
                                     </Row>
                                 </Card>
                             </Col>
-                            <Col>
-                                <Card className='border-0 '>
-                                    <Row lg={1}>
-                                        <Col>
-                                            <Card className='p-3 border-0 bg-transparent p-0 m-0'>
+                            <Col className='h-100'>
+                                <Card className='border-0 p-2 lh-100'>
+                                    <Row lg={1} xs={1} className='lh-100'>
+                                        <Col className='lh-100'>
+                                            <Card className='p-3 border-0 bg-transparent lh-100 p-0 m-0'>
                                             <div className='overflow-hidden m-auto'>
-                                                <Image src={experience3} className='object-fit-cover scale-up m-auto' fluid />
+                                                <Image src={experience3} className='object-fit-cover serve-size scale-up m-auto' fluid />
                                             </div>
                                             </Card>
                                         </Col>
                                         <Col className='h-100'>
-                                            <div className='overflow-hidden p-3 text-justify h-100'>
+                                            <div className='overflow-hidden p-lg-3 text-justify h-100'>
                                             <b>Digital Archiving:</b> I digitized paper documents and archived them in an organized manner, reducing physical storage needs and improving document management.                                            </div>
                                         </Col>
                                     </Row>
@@ -309,7 +309,7 @@ function App() {
                 </Card>
             </Col>
             </Row>
-            <Row>
+            <Row lg={2} xs={1}>
                 <Col>
                         <Card>
                             <Card.Title className='text-dark p-2'>
