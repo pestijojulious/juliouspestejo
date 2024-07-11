@@ -75,9 +75,47 @@ function App() {
             <section id="about">
                 <p className='fs-1 fw-bold text-light text-center'>About Me</p>
             <Row lg={2} xs={1} id="about">
-            <Col className='m-auto'>
-                <Card className="radius-0 bg-transparent text-light text-justify border-0">
-                    I'm a passionate Information Technology professional recently graduated from Central Philippines State University. With a strong foundation in PHP, JavaScript, HTML, CSS, Bootstrap, and React, I am dedicated to creating innovative and user-friendly web applications. My journey in IT has equipped me with problem-solving skills and a keen eye for detail, ensuring robust and efficient solutions. Beyond coding, I enjoy staying updated with the latest tech trends and exploring new ways to enhance user experiences. Let's connect and build something great together!
+            <Col>
+                <Card className="radius-0 bg-transparent text-light border-0">
+                <Card.Body>
+                <Card.Title className='poppins-bold text-center text-light text-lg-start'>Dive to my details</Card.Title>
+                <Card.Text className='p-lg-3 text-justify'>
+                    <p>
+                    Hello! I'm Julious Pestejo, an IT graduate from Central Philippines State University (CPSU), Class of 2023-2024. Born on October 20, 1997, I live in Purok Bantolinawon, Brgy Camingawan, Kabankalan City.
+                    </p>
+                    <p>
+                        My passion for technology drives me to explore and innovate within the IT field. Outside of tech, I enjoy listening to music, playing basketball, and cycling.
+                    </p>
+                    <p>
+                        With great ambitions and a dedication to continuous learning, I aim to make a meaningful impact in the tech industry.
+                    </p>
+                    <p>
+                        Thank you for visiting my portfolio. I look forward to connecting and exploring new opportunities.
+                    </p>
+                <Row lg={2} xs={2}>
+                    <Col className="m-auto">
+                        <p>
+                        <i class="bi bi-geo-alt text-danger"></i> Kabankalan City
+                        </p>
+                    </Col>
+                    <Col className="m-auto">
+                        <p>
+                        <i class="bi bi-cake text-info"></i> October 20, 1997
+                        </p>
+                    </Col>
+                    <Col className="m-auto">
+                        <p>
+                        <i class="bi bi-telephone text-primary"></i> +639518749668
+                        </p>
+                    </Col>
+                    <Col className="m-auto">
+                        <p>
+                        <i class="bi bi-buildings text-success"></i> <a href="https://www.cpsu.edu.ph/" target="_blank" rel="noreferrer" className="text-primary text-decoration-none">CPSU Main Campus</a>
+                        </p>
+                    </Col>
+                </Row>
+                </Card.Text>
+                </Card.Body>
                 </Card>
             </Col>
             <Col>
@@ -88,32 +126,44 @@ function App() {
                         <Row lg={3} xs={3} className='g-3'>
                             <Col>
                                 <Card>
-                                    <Image src={stack1} fluid alt='Bootstrap' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack1} className='scale-up' fluid alt='Bootstrap' />
+                                    </div>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <Image src={stack2} fluid alt='HTML5' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack2} className='scale-up' fluid alt='HTML5' />
+                                    </div>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <Image src={stack3} fluid alt='CSS' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack3} className='scale-up' fluid alt='CSS' />
+                                    </div>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <Image src={stack4} fluid alt='CSS' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack4} className='scale-up' fluid alt='CSS' />
+                                    </div>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <Image src={stack5} fluid alt='JS' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack5} className='scale-up' fluid alt='JS' />
+                                    </div>
                                 </Card>
                             </Col>
                             <Col>
                                 <Card>
-                                    <Image src={stack6} fluid alt='React' />
+                                    <div className='overflow-hidden'>
+                                        <Image src={stack6} className='scale-up' fluid alt='React' />
+                                    </div>
                                 </Card>
                             </Col>
                         </Row>
