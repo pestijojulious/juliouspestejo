@@ -11,6 +11,9 @@ import stack5 from './images/react.png';
 import stack6 from './images/php.png';
 import service1 from './images/service1.jpg';
 import service2 from './images/service2.jpg';
+import experience1 from './images/service4.jpg';
+import experience2 from './images/service3.jpg';
+import experience3 from './images/service5.jpg';
 
 function App() {
 
@@ -184,22 +187,22 @@ function App() {
                     <Card.Title className='fs-1 fw-bold text-center text-light'>Services</Card.Title>
                     <Card.Text>
                         <Row lg={2} xs={1}>
-                            <Col lg={12} className='m-auto my-2'>
-                                <Card className='border-0 bg-transparent m-auto'>
+                            <Col lg={12} className='m-auto my-2 lh-100'>
+                                <Card className='border-0 bg-transparent lh-100 m-auto'>
                                     <Card.Title className='text-justify'>
                                     As a dedicated and ambitious IT graduate, I specialize in providing comprehensive technical support services. My hands-on experience during my OJT has equipped me with practical skills and a deep understanding of various IT solutions. Here’s how I can assist you:
                                     </Card.Title>
                                 </Card>
                             </Col>
-                            <Col className='m-auto my-2'>
-                                <Card className='border-0 project m-auto'>
+                            <Col className='m-auto my-2 lh-100'>
+                                <Card className='border-0 project lh-100 m-auto'>
                                     <Row lg={2} xs={1}>
-                                        <Col >
+                                        <Col className='order-2 order-lg-1' >
                                             <div className='overflow-hidden p-3 text-justify'>
                                             Leveraging my extensive experience to compile, organize, and manage data, ensuring it is accurate, up-to-date, and easily accessible. I excel in creating structured data systems that enhance data retrieval and usability.
                                             </div>
                                         </Col>
-                                        <Col>
+                                        <Col className='order-1 order-lg-2'>
                                             <Card className='p-3 border-0 bg-transparent p-0 m-0'>
                                             <div className='overflow-hidden m-auto'>
                                                 <Image src={service1} className='object-fit-cover scale-up m-auto' fluid />
@@ -212,11 +215,12 @@ function App() {
                             <Col className='m-auto my-2'>
                                 <Card className='border-0 project m-auto'>
                                     <Row lg={2} xs={1}>
-                                        <Col >
+                                        <Col className='order-2 order-lg-1'>
                                             <div className='overflow-hidden p-3 text-justify'>
-                                            Gathering and compiling files from various sources into coherent and organized collections. My meticulous approach ensures all documents are systematically arranged and easily retrievable.                                            </div>
+                                            Digital Archiving: I digitized paper documents and archived them in an organized manner, reducing physical storage needs and improving document management.                                        
+                                            </div>
                                         </Col>
-                                        <Col>
+                                        <Col className='order-1 order-lg-2'>
                                             <Card className='p-3 border-0 bg-transparent p-0 m-0'>
                                             <div className='overflow-hidden m-auto'>
                                                 <Image src={service2} className='object-fit-cover scale-up m-auto' fluid />
@@ -233,20 +237,124 @@ function App() {
             </Col>
             </Row>
             </section>
-            <section id="experience">
+
+            <section id="experience" className='border-bottom border-light'>
             <Row id="experience">
             <Col>
-                <Card className="radius-0">
+                <Card className="bg-transparent border-0">
                 <Card.Body>
-                    <Card.Title className='fs-1 fw-bold text-center text-light text-lg-start'>Experience</Card.Title>
-                    <Card.Text className='text-justify'>
-                        
-                    </Card.Text>
+                    <Card.Title className='fs-1 fw-bold text-center text-light'>Experience</Card.Title>
+                        <Row lg={3} xs={1}>
+                            <Col lg={12} className='m-auto my-2'>
+                                <Card className='border-0 bg-transparent m-auto'>
+                                    <Card.Title className='text-justify w-75 m-auto py-2'>
+                                    During my OJT, I had the opportunity to immerse myself in a professional environment where I honed my technical skills and gained valuable experience in various aspects of IT support. Here are some highlights of my time:                                      
+                                    </Card.Title>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className='border-0  m-auto'>
+                                    <Row lg={1}>
+                                        <Col className='lh-100'>
+                                            <Card className='p-3 border-0 bg-transparent lh-100 p-0 m-0'>
+                                            <div className='overflow-hidden m-auto'>
+                                                <Image src={experience1} className='object-fit-cover scale-up m-auto' fluid />
+                                            </div>
+                                            </Card>
+                                        </Col>
+                                        <Col >
+                                            <div className='overflow-hidden p-3 text-justify'>
+                                            <b>Organized Documentation:</b> I was responsible for gathering and compiling files from multiple sources, ensuring that all documents were systematically arranged and easily accessible. My attention to detail ensured the accuracy and reliability of the compiled information.                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className='border-0 '>
+                                    <Row lg={1} className='lh-100'>
+                                        <Col className='lh-100'>
+                                            <Card className='p-3 border-0 bg-transparent lh-100 p-0 m-0'>
+                                            <div className='overflow-hidden m-auto lh-100'>
+                                                <Image src={experience2} className='object-fit-cover scale-up m-auto' fluid />
+                                            </div>
+                                            </Card>
+                                        </Col>
+                                        <Col className='h-100'>
+                                            <div className='overflow-hidden p-3 text-justify'>
+                                            <b>Data Structuring:</b> I structured and categorized files to enhance retrieval efficiency. This process involved creating logical file hierarchies and implementing consistent naming conventions, making it easier for team members to locate and utilize documents.
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className='border-0 '>
+                                    <Row lg={1}>
+                                        <Col>
+                                            <Card className='p-3 border-0 bg-transparent p-0 m-0'>
+                                            <div className='overflow-hidden m-auto'>
+                                                <Image src={experience3} className='object-fit-cover scale-up m-auto' fluid />
+                                            </div>
+                                            </Card>
+                                        </Col>
+                                        <Col className='h-100'>
+                                            <div className='overflow-hidden p-3 text-justify h-100'>
+                                            <b>Digital Archiving:</b> I digitized paper documents and archived them in an organized manner, reducing physical storage needs and improving document management.                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                        </Row>
                 </Card.Body>
                 </Card>
             </Col>
             </Row>
+            <Row>
+                <Col>
+                        <Card>
+                            <Card.Title className='text-dark p-2'>
+                            Technical Assistance
+                            </Card.Title>
+                            <Card.Text>
+                                <ul>
+                                    <li>
+                                        <b>IT Support:</b> I provided technical assistance to staff, troubleshooting hardware and software issues to ensure smooth daily operations. My proactive approach helped minimize downtime and improve productivity.
+                                    </li>
+                                    <li>
+                                   <b> System Maintenance:</b> I assisted in regular system maintenance tasks, including software updates and hardware checks, to ensure optimal performance of IT infrastructure.
+                                    </li>
+                                    <li>
+                                    <b>User Training:</b> I educated users on best practices for using IT systems and software, enhancing their efficiency and confidence in handling technical tasks.                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card>
+                </Col>
+                <Col>
+                        <Card>
+                            <Card.Title className='text-dark p-2'>
+                            Skills Developed
+                            </Card.Title>
+                            <Card.Text>
+                                <ul>
+                                    <li>
+                                    <b>Attention to Detail:</b> Ensuring the accuracy and reliability of compiled files and data.            
+                                    </li>
+                                    <li>
+                                    <b>Organizational Skills: </b>Structuring and categorizing files for efficient retrieval.
+                                    </li>
+                                    <li>
+                                    <b>User Training:</b> I educated users on best practices for using IT systems and software, enhancing their efficiency and confidence in handling technical tasks.      
+                                    </li>
+                                    <li>
+                                    <b>Communication:</b> Providing clear and helpful instructions to users.                                    </li>
+                                </ul>
+                            </Card.Text>
+                        </Card>
+                </Col>
+            </Row>
             </section>
+
+            
 
             <section id="contact">
             <Row id="contact" className="section h-25">
